@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortodoxis - Official page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #f4f4f4;
+        }
+
+        .album-section {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .album-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .album {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            width: 200px;
+        }
+
+        .album img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section {
+            padding: 2rem 1rem;
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: #fff;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #444;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+        form button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ortodoxis</h1>
+            <p>Donde la música cobra vida</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#albums">Álbumes</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Bienvenidos a la página oficial de Ortodoxis</h2>
+            <p>Explora nuestra música, compra álbumes digitales y descarga canciones gratuitas.</p>
+        </section>
+
+        <section id="albums" class="album-section">
+            <h2>Álbumes</h2>
+            <div class="album-container">
+                <div class="album">
+                    <img src="album1.jpg" alt="Portada del álbum 1">
+                    <h3>Álbum 1</h3>
+                    <p>Precio: $10 USD</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="album">
+                    <img src="album2.jpg" alt="Portada del álbum 2">
+                    <h3>Álbum 2</h3>
+                    <p>¡Descarga gratuita!</p>
+                    <button>Descargar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes preguntas o comentarios? Escríbenos:</p>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ortodoxis. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

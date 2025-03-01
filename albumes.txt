@@ -1,16 +1,6 @@
-[ALBUM: "Negative Creep"]
-- {PRICE: "US$10"}
-- {COVER: "https://cdn-images.dzcdn.net/images/cover/c6d8d1dd5244490a466c29cb3a0bfc8b/0x1900-000000-80-0-0.jpg"}
-end();
-
-[ALBUM: "LOL"]
-- {PRICE: "US$40"}
-- {COVER: "https://cdn-images.dzcdn.net/images/cover/c6d8d1dd5244490a466c29cb3a0bfc8b/0x1900-000000-80-0-0.jpg"}
-end();
-
-[ALBUM: "rer"]
-- {PRICE: "FREE"}
-- {COVER: "https://cdn-images.dzcdn.net/images/cover/c6d8d1dd5244490a466c29cb3a0bfc8b/0x1900-000000-80-0-0.jpg"}
+[ALBUM: "Test"]
+- {PRICE: "US$1.000.000.000.000"}
+- {COVER: "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-53522.jpg"}
 end();
 
 EndOfAlbumes([]);

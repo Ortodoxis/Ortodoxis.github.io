@@ -307,8 +307,17 @@
         <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202502250101/show_ads_impl_fy2021.js?bust=31090654"></script><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx" crossorigin="anonymous" data-checked-head="true"></script>
         <ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="yyyyyyyyyy" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_1_host" style="border: none; height: 280px; width: 1200px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:1200px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1200" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-xxxxxxxxxxxxxxxx&amp;output=html&amp;h=280&amp;slotname=yyyyyyyyyy&amp;adk=1617258589&amp;adf=3119996176&amp;pi=t.ma~as.yyyyyyyyyy&amp;w=1200&amp;abgtt=6&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1740855263&amp;rafmt=1&amp;format=1200x280&amp;url=https%3A%2F%2Fortodoxis.github.io%2F&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTE2LjAuNTM2Ni4xNDgiLG51bGwsMCxudWxsLCI2NCIsW1siT3BlcmEgR1giLCIxMTYuMC41MzY2LjE0OCJdLFsiQ2hyb21pdW0iLCIxMzEuMC42Nzc4LjI2NiJdLFsiTm90X0EgQnJhbmQiLCIyNC4wLjAuMCJdXSwwXQ..&amp;dt=1740856084954&amp;bpp=1&amp;bdt=32&amp;idt=32&amp;shv=r20250226&amp;mjsv=m202502250101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie_enabled=1&amp;eoidce=1&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=1076336630336&amp;frm=20&amp;pv=1&amp;u_tz=-180&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=816&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=139&amp;ady=459&amp;biw=1478&amp;bih=710&amp;scr_x=0&amp;scr_y=0&amp;eid=31090663%2C95353387%2C95354326%2C95354335%2C31090654%2C95353782&amp;oid=2&amp;pvsid=2766810309466219&amp;tmod=1374270619&amp;uas=0&amp;nvt=2&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C816%2C1492%2C710&amp;vis=1&amp;rsz=%7C%7CEe%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1.03&amp;td=1&amp;tdf=2&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;dtd=35" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins>
         <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+    window.onload = function() {
+        if (window.adsbygoogle && !window.adsLoaded) {
+            try {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                window.adsLoaded = true; // Evita múltiples cargas
+            } catch (e) {
+                console.error("Error en AdSense:", e);
+            }
+        }
+    };
+</script>
 
         <section id="albums" class="album-section">
             <h2>Álbumes</h2>

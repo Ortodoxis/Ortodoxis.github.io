@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortodoxis - Sobre Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
+        
+        :root {
+            --primary-color: #e44d26;
+            --secondary-color: #f06292;
+            --dark-bg: #111111;
+            --darker-bg: #0a0a0a;
+            --lighter-bg: #222222;
+            --text-color: #eeeeee;
+            --text-secondary: #bbbbbb;
+            --accent-hover: #f48fb1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Raleway', Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #000000, var(--darker-bg));
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        
+        .logo h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .main-nav {
+            margin-top: 1rem;
+        }
+        
+        .main-nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            gap: 1.5rem;
+        }
+        
+        .main-nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            background: linear-gradient(to right, var(--darker-bg), rgba(0,0,0,0.5));
+            border: 1px solid transparent;
+        }
+        
+        .main-nav a:hover {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .main-nav a.active {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            background: rgba(228, 77, 38, 0.1);
+        }
+
+        /* About Us Section */
+        .about-hero {
+            text-align: center;
+            padding: 5rem 1rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                        url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1920') center/cover no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .about-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        }
+        
+        .about-hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+        
+        .about-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .about-section {
+            margin-bottom: 4rem;
+            background-color: var(--lighter-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .about-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .about-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+
+        .about-section p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        .band-members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .band-member {
+            width: 250px;
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--darker-bg);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .band-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .member-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 3px solid var(--primary-color);
+        }
+
+        .member-img i {
+            font-size: 4rem;
+            color: var(--text-secondary);
+        }
+
+        .band-member h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .band-member p {
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            color: var(--text-secondary);
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: var(--darker-bg);
+            border-radius: 8px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item i {
+            margin-right: 1rem;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--darker-bg);
+            color: var(--text-secondary);
+            border-top: 1px solid #333;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .logo h1 {
+                font-size: 2.5rem;
+            }
+            
+            .main-nav ul {
+                flex-direction: row;
+                gap: 0.8rem;
+            }
+            
+            .main-nav a {
+                padding: 0.4rem 1rem;
+                font-size: 1rem;
+            }
+            
+            .about-hero h2 {
+                font-size: 2rem;
+            }
+            
+            .about-section h3 {
+                font-size: 1.5rem;
+            }
+            
+            .band-members {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ortodoxis</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="news.html">Noticias</a></li>
+                <li><a href="aboutUs.html" class="active">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <footer>
+        <p>© 2025 Ortodoxis. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

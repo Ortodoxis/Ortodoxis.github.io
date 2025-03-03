@@ -1,0 +1,9 @@
+[Name: "Nada Por Ahora"]:
+     [Date: 01/01/2000],
+     [Text {
+      - "This is an example Text"
+      - "Not a real New For Now"
+      }]
+end[].
+
+EndOfNews();
